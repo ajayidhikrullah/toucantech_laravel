@@ -15,4 +15,6 @@ class Member extends Model
     {
         return $this->belongsTo(School::class);
     }
+
+    
 }

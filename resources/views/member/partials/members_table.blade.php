@@ -15,7 +15,7 @@
             <td>{{ $member->fullname }}</td>
             <td>{{ $member->email }}</td>
             <td>{{ $member->school->name }}</td>
-            <td><button class="btn btn-danger">Delete</button></td>
+            <td><a class="btn btn-danger" href="{{route ('member', $member->id) }}">Delete</a></td>
         </tr>
         @endforeach
     </tbody>

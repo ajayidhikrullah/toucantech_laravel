@@ -70,7 +70,19 @@ class SchoolController extends Controller
         }
         return view($this->module_path.'members', compact('members'));
     }
+
+    public function delete($id){
+        $deleteMember = Member::where('id', $id)->first();
+        if($deleteMember != null){
+            $deleteMember->delete();
+        return redirect()->route('member.index')->with('success', 'Member deleted successfully!');
+
+        }
+        return redirect()->route('member.index')->with('success', 'No ID found!');
+    }
+
 }
+
 
 
 // function getMessageText() {

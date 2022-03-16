@@ -27,3 +27,6 @@ Route::group(['prefix' => 'school'], function(){
     Route::post('/store', 'SchoolController@store')->name('school.store');
     Route::get('/member/{id}', 'SchoolController@members')->name('school.members');
 });
+
+//delete a member row
+Route::get('/member/{id}', 'SchoolController@delete')->name('member');
