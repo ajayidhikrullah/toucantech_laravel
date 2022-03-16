@@ -5,6 +5,7 @@
         <th scope="col">Name</th>
         <th scope="col">Email</th>
         <th scope="col">School</th>
+        <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,7 @@
             <td>{{ $member->fullname }}</td>
             <td>{{ $member->email }}</td>
             <td>{{ $member->school->name }}</td>
+            <td><button class="btn btn-danger">Delete</button></td>
         </tr>
         @endforeach
     </tbody>

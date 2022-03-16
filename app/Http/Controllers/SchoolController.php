@@ -70,5 +70,26 @@ class SchoolController extends Controller
         }
         return view($this->module_path.'members', compact('members'));
     }
-
 }
+
+
+// function getMessageText() {
+//   return $('message').text;
+// }
+
+// document.body.innerHTML = '<div id="message">The message</div>';
+// console.log(getMessageText());
+
+
+// <!DOCTYPE html>
+// <html>
+//   <head>
+//     <meta charset="utf-8">
+//     <title>Paragraph editor</title>
+//   </head>
+//   <body>
+//     <p contenteditable="true" spellcheck="true" lang="en" title="Click for editing" id="editor">  
+//       Hello, I should be editable if you click on me!  
+//     </p>  
+//   </body>
+// </html>
