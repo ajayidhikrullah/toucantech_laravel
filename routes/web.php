@@ -29,4 +29,4 @@ Route::group(['prefix' => 'school'], function(){
 });
 
 //delete a member row
-Route::get('/member/{id}', 'SchoolController@delete')->name('member');
+Route::get('/member/{id}', 'SchoolController@memberDelete')->name('member');

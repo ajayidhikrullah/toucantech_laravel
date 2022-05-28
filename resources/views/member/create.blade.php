@@ -19,14 +19,14 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email Address</label>
-                    <input type="email" name="email" required class="form-control" value="{{ old('email') }}" id="exampleFormControlInput1" placeholder="yourname@domain.com">
+                    <input type="email" name="email" class="form-control" value="{{ old('email') }}" id="exampleFormControlInput1" placeholder="yourname@domain.com">
                     @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Select School</label>
-                    <select value="{{ old('school_id') }}" name="school_id" required class="form-control" id="exampleFormControlSelect1">
+                    <select value="{{ old('school_id') }}" name="school_id" class="form-control" id="exampleFormControlSelect1">
                         <option value="">Select School</option>
                         @foreach ($schools as $school)
                             <option value="{{ $school->id }}">{{ $school->name }}</option>

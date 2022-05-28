@@ -11,7 +11,7 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" name="name" required class="form-control" id="exampleFormControlInput1" placeholder="Please enter a school name">
+                    <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Please enter a school name">
                     @if ($errors->has('name'))
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
@@ -23,5 +23,4 @@
         </div>
     </div>
     {{-- School form --}}
-    
 @endsection

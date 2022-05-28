@@ -10,11 +10,6 @@ class MemberController extends Controller
 {
     private $module_path = 'member.';
 
-    public function __construct()
-    {
-
-    }
-
     public function index()
     {
         $members = Member::with('school')->get();
