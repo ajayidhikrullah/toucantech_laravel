@@ -20,10 +20,6 @@ class SchoolController extends Controller
      * SchoolController constructor.
      * 
      */
-    public function __construct()
-    {
-
-    }
 
     /**
      * This function helps in loading the list of schools.
@@ -70,38 +66,6 @@ class SchoolController extends Controller
         }
         return view($this->module_path.'members', compact('members'));
     }
-
-    // public function deleteMember($id){
-    //     $deleteMember = Member::where('id', $id)->first();
-    //     if($deleteMember != null){
-    //         $deleteMember->delete();
-    //     return redirect()->route('member.index')->with('success', 'Member deleted successfully!');
-
-    //     }
-    //     return redirect()->route('member.index')->with('success', 'No ID found!');
-    // }
-
-    // public function memberDelete($id){
-    //     $memberDelete = Member::where('id', $id)
-    //              ->firstOrFail()
-    //              ->delete();
-    // }
-    
-    // public function delete_member($id)
-    // {
-    //     try {
-    //         Member::where('id', $id)
-    //             ->firstOrFail()
-    //             ->delete();
-    //     return redirect()->route('member.index')->with('success', 'Member deleted successfully!');
-        
-    //     } catch (ModelNotFoundException $exception) {
-    //         throw new Exception('Member not found.');
-    //     } catch (Exception $exception) {
-    //         throw new Exception($exception->getMessage());
-    //     }
-    // }
-
 
     
 
