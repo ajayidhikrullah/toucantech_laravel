@@ -62,7 +62,7 @@ class SchoolController extends Controller
     {
         $members = Member::where('school_id', $id)->with('school')->get();
         if($members->count() <= 0){
-            return redirect()->back()->with('info', 'Sorry, there are no member in the selected school');
+            return redirect()->back()->with('info', 'oops! Sorry, there are no member in the selected school');
         }
         return view($this->module_path.'members', compact('members'));
     }
