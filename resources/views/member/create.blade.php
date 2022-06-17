@@ -11,7 +11,7 @@
             <form action="{{ route('member.store') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
+                    <label for="exampleFormControlInput1">Full Name</label>
                     <input type="text" name="fullname" class="form-control" value="{{ old('fullname') }}" id="exampleFormControlInput1" placeholder="Please enter your name">
                     @if ($errors->has('fullname'))
                         <span class="text-danger">{{ $errors->first('fullname') }}</span>
