@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Welcome to ToucanTech
+    Welcome to Toucan-Tech
 @endsection
 
 @section('content')
